@@ -1,4 +1,4 @@
-import logo from "@/assets/horticasa-logo.png";
+import logo from "@/assets/horticasa-round-2.png";
 import { MapPin } from "lucide-react";
 
 const Footer = () => {
@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="flex flex-col items-center md:items-start gap-4">
-            <img src={logo} alt="Horticasa" className="h-10 brightness-0 invert" />
+            <img src={logo} alt="Horticasa" className="h-12" />
             <p className="text-background/70 text-sm text-center md:text-left max-w-xs">
               A sua loja de confiança para agricultura e lar em Mação e Nisa.
             </p>
