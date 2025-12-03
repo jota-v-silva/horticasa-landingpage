@@ -1,4 +1,4 @@
-import { Wheat, Dog, Package, Wrench, Home, Fence, Droplets } from "lucide-react";
+import { Wheat, Dog, Package, Wrench, Flower2, Fence, Droplets } from "lucide-react";
 
 const products = [
   {
@@ -22,9 +22,9 @@ const products = [
     description: "Ferramentas manuais e elétricas para todos os trabalhos",
   },
   {
-    icon: Home,
-    title: "Eletrodomésticos",
-    description: "Eletrodomésticos para o conforto do seu lar",
+    icon: Flower2,
+    title: "Jardim",
+    description: "Plantas, vasos, sementes e acessórios de jardinagem",
   },
   {
     icon: Fence,
