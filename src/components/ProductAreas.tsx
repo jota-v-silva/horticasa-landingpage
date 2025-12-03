@@ -8,7 +8,7 @@ const products = [
   },
   {
     icon: Dog,
-    title: "Alimentação Animal",
+    title: "Pecuária",
     description: "Rações e suplementos para gado, aves e animais domésticos",
   },
   {
