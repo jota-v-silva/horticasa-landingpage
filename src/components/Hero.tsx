@@ -6,7 +6,7 @@ const Hero = () => {
     <section className="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-br from-primary/10 via-accent to-background pt-20">
       {/* Faint background image */}
       <div 
-        className="absolute inset-0 bg-cover bg-center opacity-[0.08]"
+        className="absolute inset-0 bg-cover bg-center opacity-[0.15]"
         style={{ backgroundImage: `url(${armazemImage})` }}
       />
       
