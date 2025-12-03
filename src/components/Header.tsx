@@ -1,4 +1,4 @@
-import logo from "@/assets/horticasa-logo-no-background-2.png";
+import logo from "@/assets/horticasa-logo-no-background-3.png";
 
 const Header = () => {
   return (
