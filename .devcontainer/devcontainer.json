@@ -1,0 +1,14 @@
+
+{
+	// Username used by VSCode to run processes, by default use node for node images
+	"remoteUser": "node",
+	"dockerFile": "dev-dockerfile",
+	"forwardPorts": [8001],
+	"context": "..",
+	// please change the left external port to your port
+	// "runArgs": ["--publish", "5177:8080","--name", "${localEnv:USER}_devcontainer_${localWorkspaceFolderBasename}"],
+	// "mounts": [ "type=bind,source=${localEnv:HOME}/.gitconfig,target=/home/node/.gitconfig",
+	// 			"type=bind,source=${localEnv:HOME}/.ssh,target=/home/node/.ssh"],
+	// "postCreateCommand": "npm clean-install",
+	// "postStartCommand": "npx vite --host 0.0.0.0 --port 8080 --open=false"
+}

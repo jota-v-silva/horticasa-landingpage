@@ -1,0 +1,22 @@
+
+# Stage 1: Build the app
+FROM mcr.microsoft.com/devcontainers/typescript-node:20-bullseye AS builder
+RUN sudo apt -y update \
+    && sudo apt -y upgrade \
+    && sudo apt -y install bash-completion
+WORKDIR /app
+COPY package.json package-lock.json* ./
+RUN npm install
+RUN \
+  if [ -f package-lock.json ]; then npm ci; \
+  else npm install; \
+  fi
+COPY . .
+RUN npm run build
+# Stage 2: Serve with a Node.js static server
+FROM mcr.microsoft.com/devcontainers/typescript-node:20-bullseye AS runner
+WORKDIR /app
+RUN npm install -g serve
+COPY --from=builder /app/dist ./dist
+EXPOSE 80
+CMD ["serve", "-s", "dist", "-l", "8001"]
