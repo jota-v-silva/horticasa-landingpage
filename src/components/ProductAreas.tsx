@@ -14,7 +14,7 @@ const products = [
   {
     icon: Home,
     title: "Casa",
-    description: "Artigos para o lar",
+    description: "Artigos para o lar, cozinha e limpezas",
   },
   {
     icon: Wrench,
