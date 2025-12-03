@@ -18,7 +18,7 @@ const products = [
   },
   {
     icon: Wrench,
-    title: "Ferramentas",
+    title: "Bricolage",
     description: "Ferramentas manuais e elétricas para todos os trabalhos",
   },
   {
