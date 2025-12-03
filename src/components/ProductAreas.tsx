@@ -13,7 +13,7 @@ const products = [
   },
   {
     icon: Package,
-    title: "Cereais a Granel",
+    title: "Cereais",
     description: "Milho, trigo, cevada e outros cereais de qualidade",
   },
   {
