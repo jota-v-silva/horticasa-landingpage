@@ -1,4 +1,4 @@
-import { Wheat, Dog, Package, Wrench, Flower2, Fence, Droplets } from "lucide-react";
+import { Wheat, Dog, Package, Wrench, Flower2, Fence, Droplets, Paintbrush } from "lucide-react";
 
 const products = [
   {
@@ -35,6 +35,11 @@ const products = [
     icon: Droplets,
     title: "Canalização",
     description: "Tubos, torneiras e acessórios de canalização",
+  },
+  {
+    icon: Paintbrush,
+    title: "Tintas",
+    description: "Tintas, vernizes, pincéis e acessórios de pintura",
   },
 ];
 
