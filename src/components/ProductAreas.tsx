@@ -1,4 +1,4 @@
-import { Wheat, Dog, Package, Wrench, Flower2, Fence, Droplets, Paintbrush } from "lucide-react";
+import { Wheat, Dog, Home, Wrench, Flower2, Fence, Droplets, Paintbrush } from "lucide-react";
 
 const products = [
   {
@@ -12,9 +12,9 @@ const products = [
     description: "Rações e suplementos para gado, aves e animais domésticos",
   },
   {
-    icon: Package,
-    title: "Cereais",
-    description: "Milho, trigo, cevada e outros cereais de qualidade",
+    icon: Home,
+    title: "Casa",
+    description: "Electrodomésticos e artigos para o lar",
   },
   {
     icon: Wrench,
