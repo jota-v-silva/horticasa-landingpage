@@ -1,8 +1,15 @@
 import { Leaf } from "lucide-react";
+import armazemImage from "@/assets/armazem.jpeg";
 
 const Hero = () => {
   return (
     <section className="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-br from-primary/10 via-accent to-background pt-20">
+      {/* Faint background image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center opacity-[0.08]"
+        style={{ backgroundImage: `url(${armazemImage})` }}
+      />
+      
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
         <div className="absolute bottom-10 right-10 w-96 h-96 bg-accent/50 rounded-full blur-3xl" />
