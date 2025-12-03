@@ -1,14 +1,11 @@
 import { Leaf } from "lucide-react";
 import armazemImage from "@/assets/armazem.jpeg";
-
 const Hero = () => {
-  return (
-    <section className="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-br from-primary/10 via-accent to-background pt-20">
+  return <section className="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-br from-primary/10 via-accent to-background pt-20">
       {/* Faint background image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center opacity-[0.15]"
-        style={{ backgroundImage: `url(${armazemImage})` }}
-      />
+      <div className="absolute inset-0 bg-cover bg-center opacity-[0.15]" style={{
+      backgroundImage: `url(${armazemImage})`
+    }} />
       
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
@@ -18,7 +15,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 text-center relative z-10">
         <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full mb-6">
           <Leaf className="w-4 h-4" />
-          <span className="text-sm font-medium">Desde sempre ao seu serviço</span>
+          <span className="text-sm font-medium">Desde 2011 ao seu serviço</span>
         </div>
         
         <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 font-serif">
@@ -32,15 +29,10 @@ const Hero = () => {
           Duas lojas em Mação e Nisa ao seu dispor.
         </p>
         
-        <a
-          href="#localizacoes"
-          className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-lg font-semibold hover:bg-primary/90 transition-colors shadow-lg"
-        >
+        <a href="#localizacoes" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-lg font-semibold hover:bg-primary/90 transition-colors shadow-lg">
           Visite-nos
         </a>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
