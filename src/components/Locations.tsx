@@ -1,5 +1,11 @@
 import { MapPin, Clock } from "lucide-react";
 
+const openingHours = [
+  { day: "Segunda a Sexta", hours: "09:00 - 13:00, 15:00 - 19:00" },
+  { day: "Sábado", hours: "09:00 - 13:00" },
+  { day: "Domingo", hours: "Encerrado" },
+];
+
 const locations = [
   {
     name: "Horticasa Mação",
@@ -51,9 +57,20 @@ const Locations = () => {
                 <h3 className="text-xl font-semibold text-foreground mb-3">
                   {location.name}
                 </h3>
-                <div className="flex items-start gap-3 text-muted-foreground mb-4">
+                <div className="flex items-start gap-3 text-muted-foreground mb-3">
                   <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                   <span className="text-sm">{location.address}</span>
+                </div>
+                <div className="flex items-start gap-3 text-muted-foreground mb-4">
+                  <Clock className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                  <div className="text-sm space-y-1">
+                    {openingHours.map((item) => (
+                      <div key={item.day} className="flex justify-between gap-4">
+                        <span>{item.day}:</span>
+                        <span className="text-foreground">{item.hours}</span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
                 <a
                   href={location.mapsLink}
